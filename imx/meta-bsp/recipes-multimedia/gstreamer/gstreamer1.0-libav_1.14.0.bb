@@ -1,8 +1,8 @@
 require recipes-multimedia/gstreamer/gstreamer1.0-libav.inc
 
 # Re-use patch files from 1.12.2 recipe
-FILESEXTRAPATHS_prepend := "${BSPDIR}/sources/poky/meta/recipes-multimedia/gstreamer/files:"
-FILESEXTRAPATHS_prepend := "${BSPDIR}/sources/poky/meta/recipes-multimedia/gstreamer/gstreamer1.0-libav:"
+FILESEXTRAPATHS_prepend := "${THISDIR}/../../../../../poky/meta/recipes-multimedia/gstreamer/files:"
+FILESEXTRAPATHS_prepend := "${THISDIR}/../../../../../poky/meta/recipes-multimedia/gstreamer/gstreamer1.0-libav:"
 # The following PATH has highest priority
 # Implement patch overwrite, using the updated patch under this PATH, instead of the 1.12.2 ones
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"

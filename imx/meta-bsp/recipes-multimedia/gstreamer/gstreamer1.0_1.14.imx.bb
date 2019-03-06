@@ -1,7 +1,7 @@
 require recipes-multimedia/gstreamer/gstreamer1.0.inc
 
 # Re-use patch files from 1.12.2 recipe
-FILESEXTRAPATHS_prepend := "${BSPDIR}/sources/poky/meta/recipes-multimedia/gstreamer/files:"
+FILESEXTRAPATHS_prepend := "${THISDIR}/../../../../../poky/meta/recipes-multimedia/gstreamer/files:"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6762ed442b3822387a51c92d928ead0d \
                     file://gst/gst.h;beginline=1;endline=21;md5=e059138481205ee2c6fc1c079c016d0d"
