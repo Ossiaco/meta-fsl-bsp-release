@@ -20,9 +20,10 @@ PACKAGECONFIG_append_mx8 = " opencv kms"
 #Remove unrecognised configure option for 1.14
 PACKAGECONFIG_remove = " gles2"
 
-#Remove vulkan as it's incompatible for i.MX 8M Mini and i.MX 7
+#Remove vulkan as it's incompatible for i.MX 8M Mini, i.MX 7 and i.MX6
 PACKAGECONFIG_remove_mx8mm = " vulkan"
 PACKAGECONFIG_remove_mx7 = " vulkan"
+PACKAGECONFIG_remove_mx6 = " vulkan"
 
 PACKAGECONFIG[wayland] = "--enable-wayland,--disable-wayland,wayland-native wayland wayland-protocols"
 
